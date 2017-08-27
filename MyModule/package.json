@@ -1,0 +1,7 @@
+{
+	"name": "my_module",
+	"version": "0.1.0",
+	"dependencies": {
+		"algorithm": "file:../NMLibs/Algorithm/algorithm-1.0.1.tgz"
+	}
+}

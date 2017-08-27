@@ -1,0 +1,10 @@
+{
+	"author": "prowmer",
+	"name": "censorify",
+	"version": "0.1.1",
+	"description": "这是我的第一个自定义封装模块，Test1，也是：text检测转换器",
+	"main": "censortext",
+	"engines": {
+		"node": "*"
+	}
+}

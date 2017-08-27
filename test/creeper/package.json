@@ -1,0 +1,18 @@
+{
+	"author": "prowmer",
+	"name": "creeper",
+	"version": "1.0.0",
+	"description": "基于Node 的小爬虫",
+	"main": "main",
+	"engines": {
+		"node": "*"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"superagent": "^3.5.2",
+		"cheerio": "^1.0.0-rc.1",
+		"async": "^2.4.1"
+	}
+}
