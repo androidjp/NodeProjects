@@ -1,0 +1,10 @@
+{
+	"author": "prowmer",
+	"name": "algorithm",
+	"version": "1.0.1",
+	"description": "常用算法工具模块，包含排序、树、图、收索、查找、遍历等算法",
+	"main": "algorithm",
+	"engines": {
+		"node": "*"
+	}
+}
