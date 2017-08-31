@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="bower_components/angular/angular.min.js"></script>
+      <script type="text/javascript">
+    		var app = angular.module('myapp',[])
+    			.controller('ParentController', ['$scope', '$rootScope', function($scope,$rootScope){
+    				$scope.username = "Jon";
+    				$rootScope.username = "AAAAAA";
+    				$scope.show = function(){
+    					console.log($scope.username);
+    					console.log($scope.$parent.username);
+    				};
+    				// console.log($scope.username);
+    			}])
+    			.controller('ChildController', ['$scope', function($scope){
+    				// console.log($scope.username);
+    				$scope.show = function(){
+    					console.log($scope);
+    					console.log($scope.$parent.username);
+    				};
+    			}]);
+    </script>
+</head>
+
+<body ng-app="myapp">
+	{{username}}
+    <div ng-controller="ParentController">
+    	<!-- {{student.fullName()}} -->
+    	<input type="text" ng-model="username" ng-change="show()"/>
+    	<!-- {{username}} -->
+	
+		 <div ng-controller="ChildController">
+    		<!-- {{output.eqq()}} -->
+    		<input type="text" ng-model="username" ng-change = "show()"/>
+    		<!-- {{username}} -->
+    	</div>
+    </div>
+   
+   
+
+
+  
+</body>
+
+</html>

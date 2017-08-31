@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>First Angular</title>
+    <script src="bower_components/angular/angular.min.js"></script>
+    
+    <!-- 
+	<script src="http://huma-3-w7.corp.oocl.com:8080/bower_components/angular/angular.min.js"></script> -->
+</head>
+
+<body>
+    <div>
+        <input type="text" ng-model="yourName" placeholder="Enter a name here">
+        <h1>Hello , {{yourName}}</h1>
+    </div>
+    <hello-world>
+    </hello-world>
+   
+ <script type="text/javascript">
+    var app = angular.module('myapp', []);
+    
+    app.directive('helloWorld', function() {
+        return {
+            restrict: 'AE',//attribute element
+            replace: true,
+            template: '<h3>Hello world!</h3>'
+        }
+    });
+    </script>
+
+</body>
+
+</html>
