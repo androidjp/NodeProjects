@@ -1,0 +1,17 @@
+{
+  "name": "pure-commonjs-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    ///相当于： webpack -conf ./webpack.config.js
+    "start": "webpack && node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.5.5"
+  }
+}

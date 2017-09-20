@@ -1,0 +1,2 @@
+webpackJsonp([0],{1:function(t,e,a){var o=a(0),u=(a(3),a(5));o.module("ita-app",["ui.router"]).config(u)},5:function(t,e){t.exports=function(t){t.state({name:"default",url:"",template:" <h3>Hello ITA</h3>"}).state({name:"home",url:"/",template:" <h3>Hello ITA</h3>"}).state({name:"about",url:"/about",template:"<h3>About you,what!</h3>"})}}},[1]);
+//# sourceMappingURL=main.9815fb6d0acc4ce4810f.js.map
